@@ -38,7 +38,7 @@ public class DailyrewardPopup : MonoBehaviour
         }
         catch
         {
-            Debug.Log(Data.TotalDays);
+            // Debug.Log(Data.TotalDays);
         }
 
         Utils.CanChangeTotalDay = 1;
@@ -70,7 +70,6 @@ public class DailyrewardPopup : MonoBehaviour
     }
     private void ResetLoopReward()
     {
-        Debug.Log(Data.TotalDays);
         if (Data.TotalDays == ListDay.Count)
         {
             Data.TotalDays = 0;

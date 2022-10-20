@@ -14,7 +14,6 @@ public class DataDailyReward : ScriptableObject
     {
         get
         {
-            Debug.Log("here--------------");
             if (!EditorBuildSettings.TryGetConfigObject<DataDailyReward>(EDITOR_BUILD_SETTINGS_GUID, out DataDailyReward settings))
             {
                 settings = ExtensionEditer.FindAllAssets<DataDailyReward>().FirstOrDefault(a => a != null) as DataDailyReward;
