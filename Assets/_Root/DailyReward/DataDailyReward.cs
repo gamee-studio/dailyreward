@@ -5,7 +5,7 @@ using UnityEditor;
 using System;
 using System.Linq;
 
-[CreateAssetMenu(fileName = "DataDailyReward", menuName = "ScriptableObjects/DataDailyReward")]
+// [CreateAssetMenu(fileName = "DataDailyReward", menuName = "ScriptableObjects/DataDailyReward")]
 public class DataDailyReward : ScriptableObject
 {
     private const string EDITOR_BUILD_SETTINGS_GUID = "Editor Settings Asset";
@@ -14,6 +14,7 @@ public class DataDailyReward : ScriptableObject
     {
         get
         {
+            Debug.Log("here--------------");
             if (!EditorBuildSettings.TryGetConfigObject<DataDailyReward>(EDITOR_BUILD_SETTINGS_GUID, out DataDailyReward settings))
             {
                 settings = ExtensionEditer.FindAllAssets<DataDailyReward>().FirstOrDefault(a => a != null) as DataDailyReward;
