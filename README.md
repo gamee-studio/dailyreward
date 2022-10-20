@@ -11,7 +11,8 @@ for version 1.0.0
 "com.gamee.dailyreward": "https://github.com/gamee-studio/dailyreward.git?path=Assets/_Root",
 ```
 ## Usage
-![Screenshot 2022-10-20 175710](https://user-images.githubusercontent.com/92133266/196930674-8c0178a4-2125-4be6-8a5e-0ef71cad3c64.png)
+![Screenshot 2022-10-20 175710](https://user-images.githubusercontent.com/92133266/196931541-52b0ad2c-d35f-4c12-9daf-c07944a5ff2c.png)
+
 
 "package name": "path version ",
 ```
