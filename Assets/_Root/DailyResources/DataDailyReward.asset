@@ -12,4 +12,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c285fee73a0f844793980f41000518a, type: 3}
   m_Name: DataDailyReward
   m_EditorClassIdentifier: 
-  ListReward: []
+  ListReward:
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}
+  - Daynumber: 0
+    Coinbonus: 0
+    Skinnumber: 0
+    IconReward: {fileID: 0}

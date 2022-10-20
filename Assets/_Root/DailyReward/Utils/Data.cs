@@ -21,6 +21,14 @@ public static class Data
             SetInt(Constants.TOTALDAYS, value);
         }
     }
+    public static int WeekCurrent
+    {
+        get => GetInt(Constants.TOTALWEEKS, 1);
+        set
+        {
+            SetInt(Constants.TOTALWEEKS, value);
+        }
+    }
     public static void SetTotalDays()
     {
         var time = DateTime.Now.Day - DateTime.Parse(DateTimeCheck).Day;
