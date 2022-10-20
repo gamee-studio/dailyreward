@@ -14,6 +14,7 @@ public class DailyrewardPopup : MonoBehaviour
 
     private void Awake()
     {
+        dataReward = DataDailyReward.Current;
         // quantity of reward will alway is a number%7=0
         var week = (int)(dataReward.ListReward.Count / 7);
         content.Clear();
