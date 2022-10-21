@@ -1232,7 +1232,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3287930344348978370}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DailyrewardPopup, Assembly-CSharp
         m_MethodName: OnClaimReward
         m_Mode: 1
@@ -3149,7 +3149,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3287930344348978370}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DailyrewardPopup, Assembly-CSharp
         m_MethodName: OnClickPlusDay
         m_Mode: 1
@@ -4046,10 +4046,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7513977882070894285}
-  - component: {fileID: 3287930344348978370}
   - component: {fileID: 2995686745663337690}
   - component: {fileID: 3223750838567148341}
   - component: {fileID: 2465321598777838436}
+  - component: {fileID: 1009893543626071457}
   m_Layer: 5
   m_Name: DailyRewardPopup
   m_TagString: Untagged
@@ -4079,26 +4079,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3287930344348978370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4750388773463162368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 038ebcc172c0f844abfa0ab1bb97c464, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ListDay: []
-  ListRow: []
-  DataReward: {fileID: 0}
-  Row: {fileID: 8403750050451349850, guid: 6a0f044d1814cad4b8dad6ba2e394ce6, type: 3}
-  content: {fileID: 7478772254347098312}
-  scrollrect: {fileID: 2842616056441236601}
-  btnClaim: {fileID: 1394453739148599366}
-  ScrollviewStype: 1
 --- !u!223 &2995686745663337690
 Canvas:
   m_ObjectHideFlags: 0
@@ -4149,6 +4129,26 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1009893543626071457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4750388773463162368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038ebcc172c0f844abfa0ab1bb97c464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListDay: []
+  ListRow: []
+  DataReward: {fileID: 0}
+  Row: {fileID: 8403750050451349850, guid: 6a0f044d1814cad4b8dad6ba2e394ce6, type: 3}
+  content: {fileID: 7478772254347098312}
+  scrollrect: {fileID: 2842616056441236601}
+  btnClaim: {fileID: 1394453739148599366}
+  ScrollviewStype: 1
 --- !u!1 &4774452161075952963
 GameObject:
   m_ObjectHideFlags: 0
