@@ -10,6 +10,8 @@ public class DataDailyReward : ScriptableObject
 {
     private const string EDITOR_BUILD_SETTINGS_GUID = "Editor Settings Asset";
     public List<RewardData> ListReward;
+    // Create DataDailyReward if Null
+#if UNITY_EDITOR
     public static DataDailyReward Current
     {
         get
@@ -35,6 +37,7 @@ public class DataDailyReward : ScriptableObject
             return settings;
         }
     }
+#endif
 
 
 }
