@@ -2,7 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace Pancake.DailyRewardEditor
+namespace Pancake.DailyReward
 {
     [InitializeOnLoad]
     internal class AutoRunFirstTime
