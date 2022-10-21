@@ -6,7 +6,7 @@ namespace Pancake.DailyReward
     public class ImportPackage
     {
         private const string EXAMPLE_PACKAGE_PATH = "Assets/_Root/Packages/ExamplePackage.unitypackage";
-        private const string EXAMPLE_PACKAGE_UPM_PATH = "Packages/com.gamee.dailyreward/Packages/ExamplePackage.unitypackage";
+        private const string EXAMPLE_PACKAGE_UPM_PATH = "Packages/com.gamee.Dailyreward/Packages/ExamplePackage.unitypackage";
 
         public static void ImportExample()
         {
