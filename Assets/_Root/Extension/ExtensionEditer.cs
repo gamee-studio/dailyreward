@@ -33,4 +33,10 @@ public static class ExtensionEditer
 #endif
         return l;
     }
+    private const string DEFAULT_RESOURCE_PATH = "Assets/_Root/Resources";
+    public static string DefaultResourcesPath()
+    {
+        if (!DEFAULT_RESOURCE_PATH.DirectoryExists()) DEFAULT_RESOURCE_PATH.CreateDirectory();
+        return DEFAULT_RESOURCE_PATH;
+    }
 }

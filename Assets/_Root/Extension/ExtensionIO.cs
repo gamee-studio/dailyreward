@@ -17,4 +17,5 @@ public static class ExtensionIO
     /// <param name="directoryPath"></param>
     /// <returns></returns>
     public static bool DirectoryExists(this string directoryPath) { return Directory.Exists(directoryPath); }
+    public static bool FileExists(this string filePath) { return File.Exists(filePath); }
 }
