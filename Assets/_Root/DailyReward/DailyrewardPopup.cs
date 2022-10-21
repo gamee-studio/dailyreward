@@ -3,18 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DailyrewardPopup : MonoBehaviour
 {
     public List<DailyRewardItem> ListDay;
     public List<RowDailyreward> ListRow;
-    public DataDailyReward DataReward;
-    public RowDailyreward Row;
+    [SerializeField] private DataDailyReward DataReward;
+    [SerializeField] private RowDailyreward Row;
     [SerializeField] private Transform content;
-    public bool ScrollviewStype = true;
     [SerializeField] private ScrollRect scrollrect;
-
-
+    [SerializeField] private GameObject btnClaim;
+    public bool ScrollviewStype = true;
     private void Awake()
     {
         DataReward = DataDailyReward.Current;
@@ -41,9 +41,9 @@ public class DailyrewardPopup : MonoBehaviour
         HideWeekClaimed();
 
     }
-
     public void OnClaimReward()
     {
+        btnClaim.SetActive(false);
         if (Data.isClaimed) return;
         Data.DateTimeCheck = DateTime.Now.ToString();
         try
@@ -54,7 +54,6 @@ public class DailyrewardPopup : MonoBehaviour
         {
             // Debug.Log(Data.TotalDays);
         }
-
         Utils.CanChangeTotalDay = 1;
         Data.isClaimed = true;
         ResetItem();
@@ -66,13 +65,17 @@ public class DailyrewardPopup : MonoBehaviour
     {
         // this function is debug in this popup to change time by  the way "Minus 1 day value of DateTimeCheck" 
         Data.DateTimeCheck = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day - 1, 00, 00, 00).ToString();
+        CheckUpdateDayDaily();
+    }
+    public void CheckUpdateDayDaily()
+    {
         if (Utils.CanChangeTotalDay == 1)
         {
             Data.SetTotalDays();
             Data.isClaimed = false;
             ResetLoopReward();
             ResetItem();
-
+            btnClaim.SetActive(true);
         }
     }
     public void ResetItem()
