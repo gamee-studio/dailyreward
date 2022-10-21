@@ -16,9 +16,9 @@
   ],
   "samples": [
     {
-      "displayName": "Example",
-      "description": "test",
-      "path": "Samples~/newtest"
+      "displayName": "ExampleScene",
+      "description": "Create Demo Scene ExampleScene",
+      "path": "Samples~/ExampleScene"
     }
   ],
   "dependencies": {},
