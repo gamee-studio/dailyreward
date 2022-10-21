@@ -17,7 +17,7 @@ public class DailyRewardPopup : MonoBehaviour
     public bool ScrollviewStype = true;
     private void Awake()
     {
-        DataReward = DataDailyReward.Current;
+        if (DataReward == null) DataReward = DataDailyReward.Current;
         // quantity of reward will alway is a number%7=0
         var week = (int)(DataReward.ListReward.Count / 7);
         content.Clear();
