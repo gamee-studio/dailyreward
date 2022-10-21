@@ -13,43 +13,45 @@ MonoBehaviour:
   m_Name: DataDailyReward
   m_EditorClassIdentifier: 
   ListReward:
-  - Daynumber: 0
-    Coinbonus: 0
+  - Coinbonus: 500
     Skinnumber: 0
     IconReward: {fileID: 21300000, guid: a5b381a90b68ebf4e8eb8eee409b74b8, type: 3}
-  - Daynumber: 0
-    Coinbonus: 0
+  - Coinbonus: 800
     Skinnumber: 0
     IconReward: {fileID: 21300000, guid: 513902bf879b0c442bffbd3bf4e242df, type: 3}
-  - Daynumber: 0
-    Coinbonus: 0
+  - Coinbonus: 1000
     Skinnumber: 0
     IconReward: {fileID: 21300000, guid: 22ab27a53d67a8b4fb47371caf9bef9d, type: 3}
-  - Daynumber: 0
-    Coinbonus: 0
+  - Coinbonus: 1500
     Skinnumber: 0
     IconReward: {fileID: 21300000, guid: 1d769f665e1569242922f9c6431a59e9, type: 3}
-  - Daynumber: 0
-    Coinbonus: 0
+  - Coinbonus: 2000
     Skinnumber: 0
     IconReward: {fileID: 21300000, guid: 4a66909ae1d0c7d4581828f2be512b2c, type: 3}
-  - Daynumber: 0
-    Coinbonus: 0
+  - Coinbonus: 2500
     Skinnumber: 0
     IconReward: {fileID: 21300000, guid: b893f41af00c1454ba21dba84b5c0a29, type: 3}
-  - Daynumber: 0
-    Coinbonus: 0
+  - Coinbonus: 3000
     Skinnumber: 0
     IconReward: {fileID: 21300000, guid: b893f41af00c1454ba21dba84b5c0a29, type: 3}
-  - Daynumber: 0
-    Coinbonus: 0
+  - Coinbonus: 3500
     Skinnumber: 0
     IconReward: {fileID: 21300000, guid: b893f41af00c1454ba21dba84b5c0a29, type: 3}
-  - Daynumber: 0
-    Coinbonus: 0
+  - Coinbonus: 4000
     Skinnumber: 0
     IconReward: {fileID: 21300000, guid: b893f41af00c1454ba21dba84b5c0a29, type: 3}
-  - Daynumber: 0
-    Coinbonus: 0
+  - Coinbonus: 4500
     Skinnumber: 0
-    IconReward: {fileID: 0}
+    IconReward: {fileID: 21300000, guid: b893f41af00c1454ba21dba84b5c0a29, type: 3}
+  - Coinbonus: 5000
+    Skinnumber: 0
+    IconReward: {fileID: 21300000, guid: b893f41af00c1454ba21dba84b5c0a29, type: 3}
+  - Coinbonus: 5500
+    Skinnumber: 0
+    IconReward: {fileID: 21300000, guid: b893f41af00c1454ba21dba84b5c0a29, type: 3}
+  - Coinbonus: 6000
+    Skinnumber: 0
+    IconReward: {fileID: 21300000, guid: b893f41af00c1454ba21dba84b5c0a29, type: 3}
+  - Coinbonus: 6500
+    Skinnumber: 0
+    IconReward: {fileID: 21300000, guid: b893f41af00c1454ba21dba84b5c0a29, type: 3}

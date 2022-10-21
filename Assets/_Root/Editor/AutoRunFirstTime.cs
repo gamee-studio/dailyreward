@@ -2,16 +2,18 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-
-[InitializeOnLoad]
-internal class AutoRunFirstTime
+namespace Pancake.DailyRewardEditor
 {
-    static AutoRunFirstTime()
+    [InitializeOnLoad]
+    internal class AutoRunFirstTime
     {
-        if (!EditorPrefs.GetBool($"__Example__{PlayerSettings.productGUID}", false))
+        static AutoRunFirstTime()
         {
-            ImportPackage.ImportExample();
-            EditorPrefs.SetBool($"__Example__{PlayerSettings.productGUID}", true);
+            if (!EditorPrefs.GetBool($"__Example__{PlayerSettings.productGUID}", false))
+            {
+                ImportPackage.ImportExample();
+                EditorPrefs.SetBool($"__Example__{PlayerSettings.productGUID}", true);
+            }
         }
     }
 }
