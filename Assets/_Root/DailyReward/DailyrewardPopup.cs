@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class DailyrewardPopup : MonoBehaviour
+public class DailyRewardPopup : MonoBehaviour
 {
     public List<DailyRewardItem> ListDay;
     public List<RowDailyreward> ListRow;
