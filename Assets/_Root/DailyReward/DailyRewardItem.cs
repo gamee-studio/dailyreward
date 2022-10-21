@@ -13,16 +13,23 @@ public class DailyRewardItem : MonoBehaviour
     [SerializeField] private Image DoneIcon;
     [SerializeField] private GameObject BGDay;
     [SerializeField] private GameObject BGActive;
+    private DataDailyReward DataDaily;
 
 
-    public void Init(DataDailyReward Data, int Index)
+    public void Init(DataDailyReward DataDaily, int Index)
     {
+        this.DataDaily = DataDaily;
         this.Index = Index;
         txtDay.text = "Day " + Index.ToString();
-        txtValue.text = Data.ListReward[Index - 1].Coinbonus.ToString();
-        img.sprite = Data.ListReward[Index - 1].IconReward;
+        txtValue.text = DataDaily.ListReward[Index - 1].Coinbonus.ToString();
+        img.sprite = DataDaily.ListReward[Index - 1].IconReward;
         img.SetNativeSize();
         Reset();
+    }
+    private void ChangeDayName()
+    {
+        txtDay.text = "Day " + ((Data.WeekReal - 1) * DataDaily.ListReward.Count + Index).ToString();
+
     }
     public void Reset()
     {
@@ -44,6 +51,7 @@ public class DailyRewardItem : MonoBehaviour
         {
             DoneIcon.gameObject.SetActive(false);
         }
+        ChangeDayName();
 
     }
 

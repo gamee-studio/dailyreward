@@ -26,4 +26,5 @@ public class RowDailyReward : MonoBehaviour
             Dayitem.Init(Data, (Index - weeknumber) * 3 + weeknumber + 1);
         }
     }
+
 }

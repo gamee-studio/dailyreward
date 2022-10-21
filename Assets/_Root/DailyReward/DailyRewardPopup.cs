@@ -101,6 +101,7 @@ public class DailyRewardPopup : MonoBehaviour
         {
             Data.TotalDays = 0;
             Data.WeekCurrent = 1;
+            Data.WeekReal++;
             foreach (var x in ListRow)
             {
                 x.gameObject.SetActive(true);
