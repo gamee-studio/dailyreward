@@ -14,13 +14,6 @@
   "keywords": [
     "unity"
   ],
-  "samples": [
-    {
-      "displayName": "ExampleScene",
-      "description": "Create Demo Scene ExampleScene",
-      "path": "Samples~/ExamplePackage"
-    }
-  ],
   "dependencies": {},
   "repository": {
     "type": "git",
