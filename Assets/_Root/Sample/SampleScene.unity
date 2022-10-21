@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!224 &3540984 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7478772254347098312, guid: a9e0afc1c8cbef34380a791f4ad573f4, type: 3}
+  m_PrefabInstance: {fileID: 7892582624522116567}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &44868284
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +302,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1772607030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4750388773463162368, guid: a9e0afc1c8cbef34380a791f4ad573f4, type: 3}
+  m_PrefabInstance: {fileID: 7892582624522116567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1772607036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772607030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee078026aee163f4db003f978817c9c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListDay: []
+  ListRow: []
+  DataReward: {fileID: 0}
+  Row: {fileID: 8403750050451349850, guid: 6a0f044d1814cad4b8dad6ba2e394ce6, type: 3}
+  content: {fileID: 3540984}
+  scrollrect: {fileID: 0}
+  btnClaim: {fileID: 0}
+  ScrollviewStype: 1
 --- !u!1 &2123644156
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +500,10 @@ PrefabInstance:
       propertyPath: ScrollviewStype
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3328505463858595248, guid: a9e0afc1c8cbef34380a791f4ad573f4, type: 3}
+      propertyPath: DataReward
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e62358a5eba1604f870971050977e12, type: 2}
     - target: {fileID: 3397682253169544924, guid: a9e0afc1c8cbef34380a791f4ad573f4, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -718,5 +752,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1009893543626071457, guid: a9e0afc1c8cbef34380a791f4ad573f4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a9e0afc1c8cbef34380a791f4ad573f4, type: 3}

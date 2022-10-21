@@ -4049,7 +4049,7 @@ GameObject:
   - component: {fileID: 2995686745663337690}
   - component: {fileID: 3223750838567148341}
   - component: {fileID: 2465321598777838436}
-  - component: {fileID: 1009893543626071457}
+  - component: {fileID: 3328505463858595248}
   m_Layer: 5
   m_Name: DailyRewardPopup
   m_TagString: Untagged
@@ -4129,7 +4129,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1009893543626071457
+--- !u!114 &3328505463858595248
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4138,7 +4138,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4750388773463162368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 038ebcc172c0f844abfa0ab1bb97c464, type: 3}
+  m_Script: {fileID: 11500000, guid: ee078026aee163f4db003f978817c9c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ListDay: []
