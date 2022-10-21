@@ -6153,7 +6153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Time: {fileID: 3480620586620608102}
-  dailyrewardPopup: {fileID: 3287930344348978370}
+  dailyRewardPopup: {fileID: 0}
 --- !u!1 &6777505640394597543
 GameObject:
   m_ObjectHideFlags: 0

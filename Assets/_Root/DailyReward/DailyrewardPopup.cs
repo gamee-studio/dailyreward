@@ -8,9 +8,9 @@ using TMPro;
 public class DailyRewardPopup : MonoBehaviour
 {
     public List<DailyRewardItem> ListDay;
-    public List<RowDailyreward> ListRow;
+    public List<RowDailyReward> ListRow;
     [SerializeField] private DataDailyReward DataReward;
-    [SerializeField] private RowDailyreward Row;
+    [SerializeField] private RowDailyReward Row;
     [SerializeField] private Transform content;
     [SerializeField] private ScrollRect scrollrect;
     [SerializeField] private GameObject btnClaim;
@@ -33,7 +33,7 @@ public class DailyRewardPopup : MonoBehaviour
         int index = 0;
         while (index < (int)((DataReward.ListReward.Count - week) / 3) + week)
         {
-            RowDailyreward row = Instantiate(Row, content);
+            RowDailyReward row = Instantiate(Row, content);
             ListRow.Add(row);
             row.Init(DataReward, index, 3, this);
             index++;

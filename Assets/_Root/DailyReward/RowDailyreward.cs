@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RowDailyreward : MonoBehaviour
+public class RowDailyReward : MonoBehaviour
 {
     public DailyRewardItem DayItem;
     public DailyRewardItem DayItem7;
