@@ -18,7 +18,7 @@
     {
       "displayName": "ExampleScene",
       "description": "Create Demo Scene ExampleScene",
-      "path": "Samples~/ExampleScene"
+      "path": "Samples~/ExamplePackage.unitypackage"
     }
   ],
   "dependencies": {},
