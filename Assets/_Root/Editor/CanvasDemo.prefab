@@ -4096,7 +4096,7 @@ MonoBehaviour:
   DataReward: {fileID: 0}
   Row: {fileID: 8403750050451349850, guid: 6a0f044d1814cad4b8dad6ba2e394ce6, type: 3}
   content: {fileID: 7478772254347098312}
-  scrollrect: {fileID: 0}
+  scrollrect: {fileID: 2842616056441236601}
   btnClaim: {fileID: 1394453739148599366}
   ScrollviewStype: 1
 --- !u!223 &2995686745663337690
