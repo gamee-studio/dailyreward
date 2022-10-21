@@ -11,6 +11,7 @@ internal class AutoRunFirstTime
         if (!EditorPrefs.GetBool($"__Example__{PlayerSettings.productGUID}", false))
         {
             ImportPackage.ImportExample();
+            EditorPrefs.GetBool($"__Example__{PlayerSettings.productGUID}", true);
         }
     }
 }
