@@ -23,7 +23,8 @@ In the first time you import this package. DailyDemo will be auto import to fold
 - Nextdaybtn => debug to next day.
 - Claimbtn   => claim coin value dayreward.
 - Scrollview stype => Select this bool to make stype scrollview all day.
-
+![Screenshot 2022-10-24 103911](https://user-images.githubusercontent.com/92133266/197444110-6cc97a8f-d3c5-403e-870a-88d559e0369a.png)
+DataDailyReward will be use to add or remove the loop cycle dailyreward
 
 "package name": "path version ",
 ```
