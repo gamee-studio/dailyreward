@@ -19,7 +19,9 @@ namespace Pancake.DailyReward
         public bool ScrollviewStype = true;
         private void Awake()
         {
+#if UNITY_EDITOR
             if (DataReward == null) DataReward = DataDailyReward.Current;
+#endif
             // quantity of reward will alway is a number%7=0
             var week = (int)(DataReward.ListReward.Count / 7);
             content.Clear();
