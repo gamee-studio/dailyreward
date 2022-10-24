@@ -12,8 +12,23 @@ namespace Pancake.DailyReward
             if (!EditorPrefs.GetBool($"__Example__{PlayerSettings.productGUID}", false))
             {
                 ImportPackage.ImportExample();
-                EditorPrefs.SetBool($"__Example__{PlayerSettings.productGUID}", true);
+
+                Check();
             }
         }
+        private static void Check()
+        {
+            var editorResourcePath = "Assets/ExampleScene/";
+            if (!editorResourcePath.DirectoryExists())
+            {
+                Debug.Log("you dont have that folder");
+            }
+            else
+            {
+                EditorPrefs.SetBool($"__Example__{PlayerSettings.productGUID}", true);
+            }
+
+        }
     }
+
 }
