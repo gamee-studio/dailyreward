@@ -11,7 +11,7 @@ namespace Pancake.DailyReward
         public static void ImportExample()
         {
             string path = EXAMPLE_PACKAGE_PATH;
-            // if (!File.Exists(path)) path = !File.Exists(Path.GetFullPath(EXAMPLE_PACKAGE_UPM_PATH)) ? EXAMPLE_PACKAGE_PATH : EXAMPLE_PACKAGE_UPM_PATH;
+            if (!File.Exists(path)) path = !File.Exists(Path.GetFullPath(EXAMPLE_PACKAGE_UPM_PATH)) ? EXAMPLE_PACKAGE_PATH : EXAMPLE_PACKAGE_UPM_PATH;
             AssetDatabase.ImportPackage(path, true);
         }
     }
