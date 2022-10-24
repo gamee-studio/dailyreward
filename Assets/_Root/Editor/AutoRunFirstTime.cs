@@ -25,6 +25,7 @@ namespace Pancake.DailyReward
             }
             else
             {
+                Debug.Log("done import");
                 EditorPrefs.SetBool($"__Example__{PlayerSettings.productGUID}", true);
             }
 
