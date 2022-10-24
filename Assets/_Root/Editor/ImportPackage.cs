@@ -1,7 +1,7 @@
 using System.IO;
 using UnityEditor;
 
-namespace Pancake.DailyReward
+namespace Pancake.DailyRewardEditor
 {
     public class ImportPackage
     {
