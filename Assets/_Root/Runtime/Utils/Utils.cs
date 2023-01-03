@@ -18,8 +18,8 @@ namespace Pancake.DailyReward
         }
         public static string SecondsToTimeFormatBeforeNewDay()
         {
-            var time = DateTime.Now.Day - DateTime.Parse(Data.DateTimeCheck).Day;
-            if (time >= 1)
+            bool time = (DateTime.Now - DateTime.Parse(Data.DateTimeCheck)).TotalSeconds >= 1 * 60 * 60 * 24;
+            if (time)
             {
                 return "00:00:00";
             }
@@ -32,18 +32,17 @@ namespace Pancake.DailyReward
         }
         public static TimeSpan TimeBeforeNewDay()
         {
+            // time end day
             DateTime now = DateTime.Now;
             DateTime end = new DateTime(now.Year, now.Month, now.Day, 23, 59, 59);
-
-
-            DateTime check = new DateTime(DateTime.Parse(Data.DateTimeCheck).Year, DateTime.Parse(Data.DateTimeCheck).Month, DateTime.Parse(Data.DateTimeCheck).Day, DateTime.Parse(Data.DateTimeCheck).Hour, DateTime.Parse(Data.DateTimeCheck).Minute, DateTime.Parse(Data.DateTimeCheck).Second);
-
-            DateTime check2 = new DateTime(check.Year, check.Month, check.Day + 1, 00, 00, 00);
-            DateTime end2 = new DateTime(check.Year, check.Month, check.Day + 1, DateTime.Parse(Data.DateTimeCheck).Hour, DateTime.Parse(Data.DateTimeCheck).Minute, DateTime.Parse(Data.DateTimeCheck).Second);
             var x1 = end - now;
-            // time end day
-            var x2 = end2 - check2;
+
             // time to next
+            DateTime check = new DateTime(DateTime.Parse(Data.DateTimeCheck).Year, DateTime.Parse(Data.DateTimeCheck).Month, DateTime.Parse(Data.DateTimeCheck).Day, DateTime.Parse(Data.DateTimeCheck).Hour, DateTime.Parse(Data.DateTimeCheck).Minute, DateTime.Parse(Data.DateTimeCheck).Second);
+            DateTime check2 = check.AddDays(1);
+            DateTime end2 = check.AddDays(1).AddHours(DateTime.Parse(Data.DateTimeCheck).Hour).AddMinutes(DateTime.Parse(Data.DateTimeCheck).Minute).AddSeconds(DateTime.Parse(Data.DateTimeCheck).Second);
+            var x2 = end2 - check2;
+
             return x1 + x2;
 
 
